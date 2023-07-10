@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(245, 81, 66);
+
+    &>header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >nav {
+            border-radius: 8px;
+            display: grid;
+            gap: 20px;
+            background-color: #500;
+            height: 39px;
+            width: 30%;
+            position: fixed;
+            top: 2%;
+            bottom: 10%;
+            z-index: 20;
+
+            >ul {
+                display: flex;
+                align-items: center;
+                gap: 3%;
+                justify-content: center;
+
+                >li {
+                    >a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    &>main {
+
+        >div {
+            padding: 3rem 10rem;
+        }
+
+        >#beranda {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        &>.container {
+            height: 100vh;
+
+            &>#tentang {
+                display: flex;
+                justify-content: space-around;
+                padding: 5rem 0 3rem 0;
+
+                > :nth-child(1) {
+                    >h1 {
+                        border: 2px dotted #fff;
+                        border-radius: 0.5rem;
+                        padding: 0.5rem 1rem;
+                        width: fit-content;
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        text-shadow: 0 0 8px rgba(255, 255, 255);
+                    }
+                }
+
+                > :nth-child(2) {
+                    width: 62%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 29px;
+
+                    >p {
+
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.garis {
+    width: 100%;
+    height: 8px;
+    border-radius: 2px;
+    background: #500;
+    position: relative;
+
+}
+
+.garis-geser {
+    width: 20%;
+    height: 2px;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    background-color: aqua;
+    height: 100%;
+}
+
+.kotak-dasar {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+    justify-content: space-between;
+}
+
+.kotak {
+    width: 28%;
+    height: 80%;
+    background-color: blue;
+    margin: 10px;
+    border-radius: 4%;
+}
+
+.tombol {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    >button {
+        background-color: #500;
+        padding-inline: 10px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* 480 */
+
+.garis-tipis {
+    display: flex;
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 2px;
+    width: 40px;
+    height: 2px;
+}
+
+.container2 {
+    gap: 32px;
+    display: flex;
+    width: 100%;
+}
+
+.contain {
+    width: 60%;
+    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    >p {
+
+        font-size: 16pt;
+    }
+
+    >div {
+        display: grid;
+        gap: 1rem;
+
+        >p {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+    }
+}
+
+.contain2 {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-direction: column;
+    width: 40%;
+}
+
+input {
+    height: 1.5rem;
+}
+
+::placeholder {
+    color: black;
+    /* margin-left: 10px; */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+div.contak-link {
+    display: flex;
+    flex-direction: row;
+}
+
+#kontak {
+    height: 75vh;
+}
+
+footer {
+    height: 5vh;
+}
+
+#resume {
+    height: 100vh;
+
+    >:nth-child(2) {
+        text-indent: 2rem;
+        text-align: justify;
+    }
+}
+
+.countainer {
+    display: flex;
+    gap: 4px;
+
+    >:nth-child(1) {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px;
+
+        > :nth-child(1) {
+            text-align: center;
+        }
+    }
+
+    >:nth-child(2) {
+        width: 50%;
+        display: flex;
+        padding: 16px;
+        flex-direction: column;
+
+        >:nth-child(1) {
+            text-align: center;
+        }
+
+        >ul {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+    }
+}
+
+svg {
+    height: 50px;
+    width: 50px;
+}
+
+.none {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.img {
+    width: 100%;
+    background-size: cover;
+    border-radius: 4%;
+    height: 80%;
+}
+
+#proyek {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background: brown;
+    justify-content: space-around;
+    padding: 3rem 4rem;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    height: 92%;
+    justify-content: space-evenly;
+}
+
+.h1 {
+    height: 8%;
+}
+
+.footere {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    gap: 8px;
+}
+
+.gambar {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    border: 8px solid;
+}
+
+.gambar2 {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 8px solid;
+    margin-top: 32px;
+}
+
+.selimut {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background: antiquewhite; */
+    align-items: center;
+    gap: 8px;
+}
+
+.button {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background: red;
+}
+
+/* 
+.sex {
+    position: absolute;
+    left: px;
+
+    animation: sexBebax 0.8s;
+}
+
+@keyframes sexBebax {
+    0% {
+        left: -100px;
+    }
+
+    20% {
+        left: -80%;
+    }
+
+    40% {
+        left: -60%;
+    }
+
+    60% {
+        left: -40px;
+    }
+
+    80% {
+        left: -20px;
+    }
+
+    100% {
+        left: 0;
+    }
+} */
