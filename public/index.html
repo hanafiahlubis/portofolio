@@ -309,8 +309,8 @@
           <div class="footere">
             <div class="garis"><div class="garis-geser"></div></div>
             <div class="tombol">
-              <button id="prevBtn">Sebelum</button>
-              <button id="nextBtn">Setelahnya</button>
+              <button id="prevBtn" class="button" >Sebelum</button>
+              <button id="nextBtn"class="button"  >Setelahnya</button>
             </div>
           </div>
         </div>
@@ -485,9 +485,9 @@
         div2.className = "selimut";
         const name = document.createElement("h4");
         name.className = "name";
-        const link = document.createElement("button");
+        const link = document.createElement("a");
         link.className = "button";
-
+        link.href = dataProject[i].link;
         kotak.appendChild(div);
         div.appendChild(img);
         div2.appendChild(name);

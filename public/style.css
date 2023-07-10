@@ -352,6 +352,8 @@ svg {
     border: none;
     color: #fff;
     background: red;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* 
